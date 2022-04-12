@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MorseCode.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Morse Code" HorizontalTextAlignment="Center" TextColor="white" FontSize="36"/>
+        </Frame>
+
+        <Label Text="Text Output: "/>
+        <Label FontSize="Subtitle" Padding="30,10,30,10" x:Name="Text"/>
+        <Label Text="Morse Output: "/>
+        <Label FontSize="Subtitle" Padding="30,10,30,10" x:Name="DotsDashes"/>
+
+        <Button Text="Dot" Clicked="Dot"/>
+        <Button Text="Dash" Clicked="Dash"/>
+        <Button Text="Gap" Clicked="Gap"/>
+
+    </StackLayout>
+
+</ContentPage>
