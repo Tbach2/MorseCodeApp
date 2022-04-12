@@ -35,8 +35,30 @@ namespace MorseCode
             {
                 Text.Text += $"{Morse.MorseCoder(DotsAndDashes)}";
                 DotsAndDashes = "";
+            }           
+        }
+        string DotsAndDashes1 = "";
+        void Dot1(object sender, System.EventArgs e)
+        {
+            DotsAndDashes1 += ".";
+            DotsDashes1.Text = DotsAndDashes1;
+        }
+        void Dash1(object sender, System.EventArgs e)
+        {
+            DotsAndDashes1 += "-";
+            DotsDashes1.Text = DotsAndDashes1;
+        }
+        void Gap1(object sender, System.EventArgs e)
+        {
+            if (string.IsNullOrEmpty(DotsAndDashes1))
+            {
+                Text1.Text += " ";
             }
-            
+            else
+            {
+                Text1.Text += $"{Morse.MorseCoder(DotsAndDashes1)}";
+                DotsAndDashes1 = "";
+            }
         }
     }
 }

@@ -4,13 +4,23 @@
              x:Class="MorseCode.MainPage">
 
     <StackLayout>
+
+        <Button Text="Gap" Clicked="Gap1"/>
+        <Button Text="Dash" Clicked="Dash1"/>
+        <Button Text="Dot" Clicked="Dot1"/>
+
+        <Label Text="Morse Input Top: "/>
+        <Label FontSize="Subtitle" Padding="30,10,30,10" x:Name="DotsDashes1"/>
+        <Label Text="Text Output Top: "/>
+        <Label FontSize="Subtitle" Padding="30,10,30,10" x:Name="Text1"/>
+
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
             <Label Text="Morse Code" HorizontalTextAlignment="Center" TextColor="white" FontSize="36"/>
         </Frame>
 
-        <Label Text="Text Output: "/>
+        <Label Text="Text Output Bottom: "/>
         <Label FontSize="Subtitle" Padding="30,10,30,10" x:Name="Text"/>
-        <Label Text="Morse Output: "/>
+        <Label Text="Morse Input Bottom: "/>
         <Label FontSize="Subtitle" Padding="30,10,30,10" x:Name="DotsDashes"/>
 
         <Button Text="Dot" Clicked="Dot"/>
